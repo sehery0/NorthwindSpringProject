@@ -2,6 +2,7 @@ package com.etiya.northwind.entities.concretes;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
@@ -33,7 +34,8 @@ public class OrderDetail implements Serializable {
 	@JoinColumn(name = "product_id")
 	private Product product;
 	
-	
+	@Column(name = "quantity")
+	private int quantity;
 	
 
 }

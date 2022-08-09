@@ -29,6 +29,9 @@ public class Order {
 	@Column(name = "order_date")
 	private Date orderDate;
 	
+	@Column(name = "contact_name")
+	private String contactName;
+	
 	@ManyToOne
 	@JoinColumn(name = "customer_id")
 	private Customer customer;

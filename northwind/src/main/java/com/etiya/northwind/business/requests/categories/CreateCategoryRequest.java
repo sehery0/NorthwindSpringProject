@@ -1,4 +1,4 @@
-package com.etiya.northwind.business.responses.categories;
+package com.etiya.northwind.business.requests.categories;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,8 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CategoryListResponse {
-	private int categoryId;
+public class CreateCategoryRequest {
 	private String categoryName;
 
 }

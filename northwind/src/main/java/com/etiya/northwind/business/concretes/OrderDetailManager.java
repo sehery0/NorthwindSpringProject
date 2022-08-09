@@ -32,6 +32,7 @@ public class OrderDetailManager implements OrderDetailService{
 			responseOrderDetail.setProductId(orderDetail.getProduct().getProductId());
 			responseOrderDetail.setProductName(orderDetail.getProduct().getProductName());
 			responseOrderDetail.setOrderId(orderDetail.getOrder().getOrderId());
+			responseOrderDetail.setContactName(orderDetail.getOrder().getContactName());
 			
 			response.add(responseOrderDetail);
 		}
