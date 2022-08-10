@@ -14,5 +14,8 @@ public interface ProductService {
 	void delete(DeleteProductRequest deleteProductRequest);
 	void update(UpdateProductRequest updateProductRequest);
 	ReadProductResponse findById(int id);
+	List<ListProductResponse> getAll(Integer pageNo, Integer pageSize);
+    List<ListProductResponse> getAll(Integer pageNo, Integer pageSize,String field);
+    List<ListProductResponse> getAll(Integer pageNo, Integer pageSize,String field,boolean state);
 
 }
