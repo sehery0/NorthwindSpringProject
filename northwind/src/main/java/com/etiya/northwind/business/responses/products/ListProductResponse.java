@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductListResponse {
+public class ListProductResponse {
 	// FRONTENDE LAZIM OLAN DATA
 	private int productId;
 

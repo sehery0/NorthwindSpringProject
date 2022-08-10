@@ -7,11 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SupplierListResponse {
+public class ReadSupplierResponse {
 	private int supplierId;
-
-	private String address;
-
-	private double region;
 
 }

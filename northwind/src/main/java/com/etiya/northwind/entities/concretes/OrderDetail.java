@@ -24,15 +24,31 @@ public class OrderDetail implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@Id
-	@ManyToOne
-	@JoinColumn(name = "order_id")
-	private Order order;
+//	@Id
+//	@ManyToOne
+//	@JoinColumn(name = "order_id")
+//	private Order order;
+//	
+//	@Id
+//	@ManyToOne
+//	@JoinColumn(name = "product_id")
+//	private Product product;
 	
 	@Id
-	@ManyToOne
-	@JoinColumn(name = "product_id")
-	private Product product;
+    @Column(name="order_id")
+    private int orderId;
+
+    @ManyToOne
+    @JoinColumn(name="order_id",insertable = false, updatable = false)
+    private Order order;
+
+    @Id
+    @Column(name="product_id")
+    private int productId;
+
+    @ManyToOne
+    @JoinColumn(name="product_id",insertable = false, updatable = false)
+    private Product product;
 	
 	@Column(name = "quantity")
 	private int quantity;

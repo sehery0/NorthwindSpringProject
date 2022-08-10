@@ -7,11 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderDetailListResponse {
+public class ReadOrderDetailResponse {
 	private int orderId;
 	private int productId;
-	private String productName;
-	private String contactName;
-
 
 }
